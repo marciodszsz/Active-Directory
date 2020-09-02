@@ -60,7 +60,7 @@ $i         = 0
     
     Foreach ($User in $Users) {
         $i++
-        Get-ADUser $User | Move-ADObject -TargetPath "OU=Desligados,DC=cruzazul,DC=com,DC=br" `
+        Get-ADUser $User | Move-ADObject -TargetPath "OU=Desligados,DC=com,DC=br" `
         -Verbose
 
         Write-Progress -Activity 'Movendo contas de redes usuarios' `
